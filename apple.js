@@ -1,11 +1,15 @@
 function Apple(x, y) {
-    // randomize the apple's row and column
-    this.row = x;
-    this.col = y;
+    this.x = x;
+    this.y = y;
     this.rad = 15;
 
     this.show = function() {
-        fill(125);
-        circle(this.col, this.row, this.rad);
+        fill(255, 0, 0);
+        circle(this.x, this.y, this.rad);
+    }
+
+    this.setLocation = function(newX, newY){
+        this.x = newX;
+        this.y = newY;
     }
 }
